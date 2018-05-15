@@ -1,0 +1,98 @@
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-family: Consolas, monaco, monospace;
+	font-size: 100%;
+	padding-top: 75px;
+	background-image: url(http://technology.inquirer.net/files/2017/10/the-most-famous-windows-wallpaper-ever-turns-20-505668-2.jpg);
+	color: #000000;
+}
+
+a{
+	text-decoration: none;
+	color:rgb(160, 160, 160);
+}
+a:hover{
+	color:rgb(226, 226, 226);
+}
+
+button {
+	padding: 10px;
+	border-radius: 3px;
+	background: #272727;
+	border: #bfbfbf 1px solid;
+	color: #ffffff;
+}
+
+p{
+	line-height: 1.5em;
+	margin: 0 0 0px;
+}
+
+hr{
+	border: 0;
+	border-bottom: #272727 2px solid;
+	margin: 30px auto;
+}
+
+.title{
+	font-size: 4em;
+}
+
+.wrap{
+	max-width: 450px; 
+	margin:10px auto;
+}
+
+.menu{
+	border-radius: 10px;
+	float: left;
+	height: 450px;
+	width: 300px;
+	margin-left: 100px;
+	margin-top: 8px;
+	border: 3px #195CE1 solid;
+	background: #ECE9DA;
+}
+
+.type-wrap{
+	width: 750px;
+	height: 550px;
+	padding: 0px;
+	border-radius: 10px;
+	border: 3px #195CE1 solid;
+	overflow: auto;
+	position: relative;
+	z-index: 0;
+	background: #ECE9DA;
+}
+
+.text-box{
+	padding: 0px;
+	width: 700px;
+	height: 480px;
+	background: #ffffff;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 3px;
+	border: 3px inset;
+	overflow: auto;
+	position: relative;
+	z-index: 10;
+}
+
+.header-bar{
+	height: 30px;
+	background: linear-gradient(#195CE1, rgb(53, 122, 240));
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+
+.typed-cursor{
+	opacity: 0;
+}

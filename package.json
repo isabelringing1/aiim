@@ -1,0 +1,29 @@
+{
+  "name": "robots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabelringing1/robots.git"
+  },
+  "author": "Isabel Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabelringing1/robots/issues"
+  },
+  "homepage": "https://github.com/isabelringing1/robots#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-static": "^1.2.5",
+    "jquery": "^3.3.1",
+    "nodemon": "^1.17.3",
+    "popper.js": "^1.14.3",
+    "typed.js": "^2.0.6",
+    "yarn": "^1.6.0"
+  }
+}
