@@ -9,7 +9,19 @@ const app = express();
 app.use(express.static(__dirname + "/"));
 
 app.get('/', (req, res) => {
-    res.sendFile('/Users/isabellee/robots/index.html');
+    res.sendFile('/Users/isabellee/aiim/index.html');
+});
+
+app.get('/chapter-1', (req, res) => {
+    res.sendFile('/Users/isabellee/aiim/index.html');
+});
+
+app.get('/about', (req, res) => {
+    res.sendFile('/Users/isabellee/aiim/about.html');
+});
+
+app.get('/chapters', (req, res) => {
+    res.sendFile('/Users/isabellee/aiim/chapters.html');
 });
 
 // Start the server

@@ -2,19 +2,21 @@
 *{
 	padding:0;
 	margin:0;
+	font-family: Consolas, monaco, monospace;
 }
 
 body{
 	font-family: Consolas, monaco, monospace;
 	font-size: 100%;
 	padding-top: 75px;
-	background-image: url(http://technology.inquirer.net/files/2017/10/the-most-famous-windows-wallpaper-ever-turns-20-505668-2.jpg);
+	background-image: url(/assets/windows_xp_bliss.jpg);
+	background-size: cover;
 	color: #000000;
 }
 
 a{
 	text-decoration: none;
-	color:rgb(160, 160, 160);
+	color:rgb(44, 60, 206);
 }
 a:hover{
 	color:rgb(226, 226, 226);
@@ -23,9 +25,19 @@ a:hover{
 button {
 	padding: 10px;
 	border-radius: 3px;
-	background: #272727;
-	border: #bfbfbf 1px solid;
-	color: #ffffff;
+	background: #ECE9DA;
+	margin-left: 20px;
+	margin-top: 8px;
+	border: 3px outset;
+}
+
+button:hover{
+	background: rgb(223, 220, 205);
+}
+
+button:focus{
+	border: 3px inset;
+
 }
 
 p{
@@ -51,17 +63,29 @@ hr{
 .menu{
 	border-radius: 10px;
 	float: left;
-	height: 450px;
+	height: 350px;
 	width: 300px;
 	margin-left: 100px;
-	margin-top: 8px;
+	margin-top: 10px;
 	border: 3px #195CE1 solid;
 	background: #ECE9DA;
 }
 
+.active{
+	border-radius: 10px;
+	float: left;
+	height: 200px;
+	width: 300px;
+	margin-left: 100px;
+	margin-top: 395px;
+	border: 3px #195CE1 solid;
+	background: #ECE9DA;
+	position: absolute;
+}
+
 .type-wrap{
 	width: 750px;
-	height: 550px;
+	height: 595px;
 	padding: 0px;
 	border-radius: 10px;
 	border: 3px #195CE1 solid;
@@ -72,9 +96,9 @@ hr{
 }
 
 .text-box{
-	padding: 0px;
-	width: 700px;
-	height: 480px;
+	padding: 10px;
+	width: 690px;
+	height: 350px;
 	background: #ffffff;
 	margin-top: 20px;
 	margin-left: 20px;
@@ -83,6 +107,34 @@ hr{
 	overflow: auto;
 	position: relative;
 	z-index: 10;
+}
+
+.text-active{
+	padding: 10px;
+	width: 240px;
+	height: 120px;
+	background: #ffffff;
+	margin-top: 10px;
+	margin-left: 20px;
+	border-radius: 3px;
+	border: 3px inset;
+	overflow: auto;
+	position: relative;
+	z-index: 10;
+}
+
+.user-input {
+    padding: 10px;
+    width: 690px;
+    height: 60px;
+    background: #ffffff;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 3px inset;
+    overflow: auto;
+    position: relative;
+    z-index: 10;
 }
 
 .header-bar{
