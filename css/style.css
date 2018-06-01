@@ -65,10 +65,11 @@ hr{
 	float: left;
 	height: 350px;
 	width: 300px;
-	margin-left: 100px;
-	margin-top: 10px;
+	left: 100px;
+	top: 85px;
 	border: 3px #195CE1 solid;
 	background: #ECE9DA;
+	position: absolute;
 }
 
 .active{
@@ -76,11 +77,11 @@ hr{
 	float: left;
 	height: 200px;
 	width: 300px;
-	margin-left: 100px;
-	margin-top: 395px;
+	left: 100px;
+	top: 395px;
 	border: 3px #195CE1 solid;
 	background: #ECE9DA;
-	position: absolute;
+	
 }
 
 .type-wrap{
@@ -93,6 +94,7 @@ hr{
 	position: relative;
 	z-index: 0;
 	background: #ECE9DA;
+	position: absolute;
 }
 
 .text-box{
@@ -107,6 +109,7 @@ hr{
 	overflow: auto;
 	position: relative;
 	z-index: 10;
+	line-height: 1.6;
 }
 
 .text-active{
@@ -119,7 +122,6 @@ hr{
 	border-radius: 3px;
 	border: 3px inset;
 	overflow: auto;
-	position: relative;
 	z-index: 10;
 }
 
@@ -145,6 +147,22 @@ hr{
 }
 
 
-.typed-cursor{
-	opacity: 0;
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgb(248, 245, 230); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #ECE9DA; 
+	border: 3px outset;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(206, 203, 191); 
 }
