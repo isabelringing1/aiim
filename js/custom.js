@@ -180,6 +180,16 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!started)
             start();
     });
+
+    var trigger = document.getElementsByClassName("mute")[0];
+    var go = document.getElementById("go"); //go button
+    var popup = document.getElementById('modal1');
+    var mask =  document.getElementById('page-mask');
+    document.querySelector('.mute').addEventListener('click', function() {
+        popup.style.display = "block";
+        mask.style.display = "block";
+});
+
 });
 
 function start(){
@@ -280,3 +290,4 @@ function movedown(){
     var elem = document.getElementById('text-box');
     elem.scrollTop = elem.scrollHeight;
 }
+

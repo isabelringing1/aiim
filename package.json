@@ -21,9 +21,9 @@
     "express": "^4.16.3",
     "express-static": "^1.2.5",
     "jquery": "^3.3.1",
-    "nodemon": "^1.17.3",
+    "nodemon": "^1.17.5",
     "popper.js": "^1.14.3",
-    "typed.js": "^2.0.6",
-    "yarn": "^1.6.0"
+    "typed.js": "^2.0.8",
+    "yarn": "^1.8.0"
   }
 }
