@@ -191,9 +191,9 @@ function start(){
 
 function pushtext() {
         
-    if (plaintext){ //load as one solid block of text
+    if (plaintext && ctr != chapter1.length){ //load as one solid block of text
         loadPlaintext(ctr);
-        newctr = ctr;
+        newctr = ctr; //newctr will store ctr, ie the progression of the chat up to that point. otherwise itll be the length of chat.
         ctr = chapter1.length;
     }
     else if (!plaintext && newctr != chapter1.length){ //load as regular chat
