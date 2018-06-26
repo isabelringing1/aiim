@@ -1,6 +1,33 @@
 src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
 
 var chapter1 = [
+    "<p><AIIM [Version 7.2.05]</p>",
+    "<p>(c) Renoit University. All Rights Reserved.</p>",
+
+    "<p>c:\Data\scans</p>",
+    "<p>launching mb739.exe...</p>",
+    "<p>Name: mb739</p>",
+    "<p>AccessKey: 9X54E28L</p>",
+    "<p style = 'text-indent: 50px;'>   Loading frontal_l.dhc... </p>",
+    "<p style = 'text-indent: 50px;'>   Loading parietal_l.dhc... </p>",
+    "<p style = 'text-indent: 50px;'>   Loading occipital_l.dhc...</p>",
+    "<p style = 'text-indent: 50px;'>   Loading temporal_l.dhc...</p>",
+
+    "<p>Launching life.exe...</p>",
+    "<p>ERROR: life.exe not found. </p>",
+    "<p style = 'text-indent: 50px;'>    at \\Data\\scans\\mb739\\residualmemory</p>",
+
+    "<p>mb739.exe launched successfully.</p>",
+    "<p>Waiting for self-activation...</p>",
+    "<p>...</p>",
+    "<p>...</p>",
+    "<p>...</p>",
+    "<p>...</p>",
+    "<p>...</p>",
+    "<p>...</p>",
+    "<p>...</p>",
+    "<p>...</p>",
+
     "<p> <span style='color:#F1D35A'>bee:</span> ..ahem. </p>",
     "<p> <span style='color:#F1D35A'>bee:</span> hi.</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> is anyone, um, there?</p>", 
@@ -48,6 +75,30 @@ var chapter1 = [
 ];
 
 var pauses = [
+    500,
+    1000,
+    400,
+    400,
+    200,
+    200,
+    200,
+    200,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    3000,
     2000,
     2000,
     2000,
@@ -245,7 +296,7 @@ function addtext(ctr){
         type();
     }
     else{
-        $(".text-box").append(chapter1[ctr] + " " + (ctr+1));
+        $(".text-box").append(chapter1[ctr]/* + " " + (ctr+1)*/);
         movedown();
         if (!mute){
             rcv.play();
