@@ -1,142 +1,5 @@
 src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
 
-var chapter1 = [
-    "<p><AIIM [Version 7.2.05]</p>",
-    "<p>(c) Renoit University. All Rights Reserved.</p>",
-
-    "<p>c:\Data\scans</p>",
-    "<p>launching mb739.exe...</p>",
-    "<p>Name: mb739</p>",
-    "<p>AccessKey: 9X54E28L</p>",
-    "<p style = 'text-indent: 50px;'>   Loading frontal_l.dhc... </p>",
-    "<p style = 'text-indent: 50px;'>   Loading parietal_l.dhc... </p>",
-    "<p style = 'text-indent: 50px;'>   Loading occipital_l.dhc...</p>",
-    "<p style = 'text-indent: 50px;'>   Loading temporal_l.dhc...</p>",
-
-    "<p>Launching life.exe...</p>",
-    "<p>ERROR: life.exe not found. </p>",
-    "<p style = 'text-indent: 50px;'>    at \\Data\\scans\\mb739\\residualmemory</p>",
-
-    "<p>mb739.exe launched successfully.</p>",
-    "<p>Waiting for self-activation...</p>",
-    "<p>...</p>",
-    "<p>...</p>",
-    "<p>...</p>",
-    "<p>...</p>",
-    "<p>...</p>",
-    "<p>...</p>",
-    "<p>...</p>",
-    "<p>...</p>",
-
-    "<p> <span style='color:#F1D35A'>bee:</span> ..ahem. </p>",
-    "<p> <span style='color:#F1D35A'>bee:</span> hi.</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> is anyone, um, there?</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> if you are, can you give me some sort of sign please?</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> anything at all. that would be great.</p>",
-    "<p> <span style='color:green'>mb739:</span></p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> oh my god.</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> oh. my. god.</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> fox? i did it. i frickin did it.</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> fox tell me you just saw that</p>", 
-    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> They didn’t even say anything, bee. </p>",
-
-    "<p> <span style='color:#F1D35A'>bee:</span> ugh okay one sec lemme see if it’ll happen again</p>", 
-
-    "<p> <span style='color:#F1D35A'>bee:</span> hello? </p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> i know you can hear me</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> you have nothing to be afraid of, we’re your friends, i promise</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> can you do something? say something?</p>", 
-
-
-
-    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> I dunno bee. Just because a program runs doesn’t mean it’s... you know.</p>",
-
-    "<p> <span style='color:#F1D35A'>bee:</span> NO NO i swear it works i just</p>", 
-
-    "<p> <span style='color:green'>mb739:</span> Hello?</p>", 
-
-    "<p> <span style='color:#F1D35A'>bee:</span> ah</p>", 
-
-    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> ah</p>",
-
-    "<p> <span style='color:#F1D35A'>bee:</span> AHHHHH</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> oh my goooood</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> hi! holy cow are we glad to see you</p>", 
-
-    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> How are you feeling?</p>",
-
-    "<p> <span style='color:green'>mb739:</span> Um...</p>", 
-    "<p> <span style='color:green'>mb739:</span> A little overwhelmed, I guess.</p>", 
-    "<p> <span style='color:green'>mb739:</span> I’m sorry, but...</p>", 
-    "<p> <span style='color:green'>mb739:</span> What... is this?</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span>fuuuu i am so not prepared for this</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> um... well the simple answer is, this is AIIM.</p>", 
-
-];
-
-var pauses = [
-    500,
-    1000,
-    400,
-    400,
-    200,
-    200,
-    200,
-    200,
-    300,
-    300,
-    300,
-    300,
-    300,
-    300,
-    300,
-    300,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    100,
-    3000,
-    2000,
-    2000,
-    2000,
-    3000,
-    3000,
-    4000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2500,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    1100,
-    1000,
-    1000,
-    1100,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
-]
-
 var ctr = 0;
 var started = false;
 var mute = false;
@@ -176,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.progress').addEventListener('click', function() {
         if (started){
             if (embytext == ""){
-                $(".text-box").append(chapter1[ctr]);
+                $(".text-box").append(chapterText[ctr]);
                 ctr++;
             }
             else{
@@ -245,27 +108,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function start(){
     started = true;
-    newctr = chapter1.length;
+    newctr = chapterText.length;
     $(".text-box").empty();
     setTimeout(pushtext, pauses[ctr]);
 }
 
 function pushtext() {
         
-    if (plaintext && ctr != chapter1.length){ //load as one solid block of text
+    if (plaintext && ctr != chapterText.length){ //load as one solid block of text
         loadPlaintext(ctr);
         newctr = ctr; //newctr will store ctr, ie the progression of the chat up to that point. otherwise itll be the length of chat.
-        ctr = chapter1.length;
+        ctr = chapterText.length;
     }
-    else if (!plaintext && newctr != chapter1.length){ //load as regular chat
+    else if (!plaintext && newctr != chapterText.length){ //load as regular chat
         ctr = newctr;
         var i = 0;
         $(".text-box").empty();
         while (i < ctr){
-            $(".text-box").append(chapter1[i]);
+            $(".text-box").append(chapterText[i]);
             i++;
         }
-        newctr = chapter1.length;
+        newctr = chapterText.length;
     }
     else if (pause){
         stall();
@@ -273,7 +136,7 @@ function pushtext() {
 
     prettyLog("pause just now: " + pauses[ctr] + " ctr is " + ctr);
 
-    if (ctr < chapter1.length){
+    if (ctr < chapterText.length){
         addtext(ctr);
         ctr++;
     }
@@ -289,14 +152,14 @@ function stall(){
 }
 
 function addtext(ctr){
-    if(chapter1[ctr].substring(17, 28) == "color:green"){
+    if(chapterText[ctr].substring(17, 28) == "color:green"){
         x = 0;
-        txt = chapter1[ctr].substring(43, chapter1[ctr].length-4);
-        embytext = chapter1[ctr];
+        txt = chapterText[ctr].substring(43, chapterText[ctr].length-4);
+        embytext = chapterText[ctr];
         type();
     }
     else{
-        $(".text-box").append(chapter1[ctr]/* + " " + (ctr+1)*/);
+        $(".text-box").append(chapterText[ctr]/* + " " + (ctr+1)*/);
         movedown();
         if (!mute){
             rcv.play();
@@ -327,8 +190,8 @@ function type() { //handles emby's actual typing
 
 function loadPlaintext(ctr){
     $(".user-input").empty();
-    while (ctr < chapter1.length){
-        $(".text-box").append(chapter1[ctr]);
+    while (ctr < chapterText.length){
+        $(".text-box").append(chapterText[ctr]);
         ctr++;
     }
 }

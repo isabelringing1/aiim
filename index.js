@@ -1,8 +1,6 @@
 const express = require('express');
 global.jQuery = require('jquery'); 
-const popper = require('popper.js');
 const nodemon = require('nodemon');
-const Typed = require('typed.js');
 var path = require("path");
 
 const app = express();
@@ -10,11 +8,11 @@ const app = express();
 app.use(express.static(__dirname + "/"));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join(__dirname, '/chapter-1.html'));
 });
 
 app.get('/chapter-1', (req, res) => {
-    res.sendFile(path.join(__dirname, '/index.html'));
+    res.sendFile(path.join(__dirname, '/chapter-1.html'));
 });
 
 app.get('/about', (req, res) => {
@@ -23,6 +21,10 @@ app.get('/about', (req, res) => {
 
 app.get('/chapters', (req, res) => {
     res.sendFile(path.join(__dirname, '/chapters.html'));
+});
+
+app.get('/latest', (req, res) => {
+    res.sendFile(path.join(__dirname, '/chapter-1.html'));
 });
 
 // Start the server
