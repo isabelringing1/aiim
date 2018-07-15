@@ -2,6 +2,7 @@ var started = false;
 var mute = false;
 var textCtr = 0;
 var embyCtr = 0;
+var typeText;
 
 var rcv = document.createElement('audio');
 rcv.setAttribute('src', 'assets/imrcv.wav');
@@ -39,7 +40,9 @@ function addtext(textCtr){
         if (character == "emby" || character == "mb739"){
             console.log("emby");
             embyCtr = 0;
-            type(text);
+            typeText = text;
+            type();
+            console.log("done typing");
         }
         else{
             $(".text-box").append(chapterText[textCtr]/* + " " + (textCtr+1)*/);
@@ -48,7 +51,6 @@ function addtext(textCtr){
                 rcv.play();
             }
         }
-        console.log("resolving");
         resolve();
     });
 
@@ -71,22 +73,22 @@ function getText(text){
     return text.substring(text.indexOf("</span>") + 8, text.lastIndexOf("<"));
 }
 
-function type(text){
-    if (embyCtr < text.length){
-        document.getElementById("user-input").innerHTML += text.charAt(embyCtr);
-        embyCtr++;
-        setTimeout(type(text), 50);
-    }
-    else{ //end
-        $(".user-input").empty();
-        setTimeout(function (){
-            $(".text-box").append(chapterText[textCtr-1]);
-            movedown();
-            if (!mute){
-                send.play();
-            }
-        }, 100);
-    }
+function type(){
+        if (embyCtr < typeText.length){
+            document.getElementById("user-input").innerHTML += typeText.charAt(embyCtr);
+            embyCtr++;
+            setTimeout(type, 50);
+        }
+        else{ //end
+            $(".user-input").empty();
+            setTimeout(function (){
+                $(".text-box").append(chapterText[textCtr-1]);
+                movedown();
+                if (!mute){
+                    send.play();
+                }
+            }, 100);
+        }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
