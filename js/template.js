@@ -3,6 +3,9 @@ var mute = false;
 var textCtr = 0;
 var embyCtr = 0;
 var typeText;
+var character;
+var text;
+var typingTimeout;
 
 var rcv = document.createElement('audio');
 rcv.setAttribute('src', 'assets/imrcv.wav');
@@ -33,8 +36,8 @@ function iterate(){ //main loop
 
 function addtext(textCtr){
     return new Promise (function(resolve){
-        var character = getCharacter(chapterText[textCtr]); //parses for character name
-        var text = getText(chapterText[textCtr]); //parses for actual text
+        character = getCharacter(chapterText[textCtr]); //parses for character name
+        text = getText(chapterText[textCtr]); //parses for actual text
         console.log(character, text);
         
         if (character == "emby" || character == "mb739"){
@@ -77,7 +80,7 @@ function type(){
         if (embyCtr < typeText.length){
             document.getElementById("user-input").innerHTML += typeText.charAt(embyCtr);
             embyCtr++;
-            setTimeout(type, 50);
+            typingTimeout = setTimeout(type, 50);
         }
         else{ //end
             $(".user-input").empty();
@@ -104,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
     $('.active').draggable({
         stack: ".menu"},  {
         stack: ".type-wrap"}, 
-        {
+        {s
         containment: "window",
         handle: ".header-bar"
     });
@@ -116,4 +119,21 @@ document.addEventListener('DOMContentLoaded', function() {
         containment: "window",
         handle: ".header-bar"
     });
+
+    document.querySelector('.progress').addEventListener('click', function() {
+        if (started){
+            if (character != "emby"){
+                $(".text-box").append(chapterText[textCtr]);
+                textCtr++;
+            }
+            else{
+                $(".user-input").empty();
+                $(".text-box").append(chapterText[textCtr-1]);
+                embyCtr = typeText.length;
+                textCtr++;
+            }
+            movedown();
+        }
+    });
+
 });
