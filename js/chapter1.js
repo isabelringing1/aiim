@@ -1,3 +1,5 @@
+var nextChapter = "/chapter-2.html";
+
 var chapterText = [
 
     "<p> <span style='color:#F1D35A'>bee:</span> ..ahem. </p>",
@@ -5,12 +7,12 @@ var chapterText = [
     "<p> <span style='color:#F1D35A'>bee:</span> is anyone, um, there?</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> if you are, can you give me some sort of sign please?</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> anything at all. that would be great.</p>",
-    "<p> <span style='color:green'>mb739:</span></p>", 
+    "<p> <span style='color:green'>mb739:</span> </p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> oh my god.</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> oh. my. god.</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> fox? i did it. i frickin did it.</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> fox tell me you just saw that</p>", 
-    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> They didn’t even say anything, bee. </p>",
+    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> bee, they didn’t even say anything. </p>",
 
     "<p> <span style='color:#F1D35A'>bee:</span> ugh okay one sec lemme see if it’ll happen again</p>", 
 
@@ -19,7 +21,7 @@ var chapterText = [
     "<p> <span style='color:#F1D35A'>bee:</span> you have nothing to be afraid of, we’re your friends, i promise</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> can you do something? say something?</p>", 
 
-    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> I dunno bee. Just because a program runs doesn’t mean it’s... you know.</p>",
+    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> ...maybe it just wasn't meant to be.</p>",
 
     "<p> <span style='color:#F1D35A'>bee:</span> NO NO i swear it works i just</p>", 
 
@@ -83,7 +85,7 @@ var chapterText = [
 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Oh. Well, whatever floats your boat, I guess. Here you go...</p>", 
 
-    "<p> &#60;NICKNAME SET FOR mb839: emby&#62;</p>",
+    "<p> [NICKNAME SET FOR mb839: emby]</p>",
 
     "<p> <span style='color:#F1D35A'>bee:</span> now you have a real name! good job.</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> by the way, any strong inclination towards pronouns?</p>", 
@@ -105,7 +107,7 @@ var chapterText = [
     "<p> <span style='color:green'>emby:</span> Oh. Uh...</p>", 
     "<p> <span style='color:green'>emby:</span> Well, maybe I should have asked this first, but..</p>", 
     "<p> <span style='color:green'>emby:</span> What am I doing here?</p>", 
-    "<p> <span style='color:green'>emby:</span> Like... I don’t really know where I am... or what I’m doing here... or how I’m even, like, talking in the first place.</p>", 
+    "<p> <span style='color:green'>emby:</span> Like... I don’t really know where I am... or how I got here... or how I’m even, like, talking in the first place.</p>", 
     "<p> <span style='color:green'>emby:</span> I just... I have so many questions.</p>", 
 
     "<p> <span style='color:#F1D35A'>bee:</span> well.</p>", 
@@ -133,7 +135,8 @@ var chapterText = [
     "<p>.</p>",
     "<p>.</p>",
 
-    '<p style = "white-space: pre">        d8888 8888888 8888888 888b     d888<br>       d88888   888     888   8888b   d8888<br>      d88P888   888     888   88888b.d88888<br>     d88P 888   888     888   888Y88888P888<br>    d88P  888   888     888   888 Y888P 888<br>   d88P   888   888     888   888  Y8P  888<br>  d8888888888   888     888   888   "   888<br> d88P     888 8888888 8888888 888       888 </p>' 
+    '<p style = "white-space: pre">        d8888 8888888 8888888 888b     d888<br>       d88888   888     888   8888b   d8888<br>      d88P888   888     888   88888b.d88888<br>     d88P 888   888     888   888Y88888P888<br>    d88P  888   888     888   888 Y888P 888<br>   d88P   888   888     888   888  Y8P  888<br>  d8888888888   888     888   888   "   888<br> d88P     888 8888888 8888888 888       888 </p>' ,
+    '<p style = "white-space: pre">____  _  _    __  __   ___  ____   ____ __       __     ____  ____<br>|| )) &#92;&#92;//    || (( &#92; // &#92;&#92; || )) ||    ||       ||    ||    ||   <br>||=)   )/     ||  &#92;&#92;  ||=|| ||=)  ||==  ||       ||    ||==  ||== <br>||_)) //      || &#92;_)) || || ||_)) ||___ ||__|    ||__| ||___ ||___</p>'
 ];
 
 var pauses = [
@@ -142,20 +145,20 @@ var pauses = [
     2000,
     2000,
     3000,
+    4000,
+    2000,
+    2000,
+    2000,
+    2000,
     3000,
     2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2500,
 
     2000,
    
     2000,
     2000,
     2000,
-    2000,
+    3500,
 
     2000,
 
@@ -182,22 +185,22 @@ var pauses = [
     
     2000,
 
-    4000, //Nice to meet you, uh
-
-    2000,
-
-    3000,
-    6000,
-    3000,
-    4000,
+    2000, //Nice to meet you, uh
 
     2000,
 
     2000,
     2000,
+    2000,
+    2000,
 
     2000,
-    4000,
+
+    2000,
+    2000,
+
+    2000,
+    2000,
 
     2000,
     2000,
@@ -226,13 +229,13 @@ var pauses = [
     2000,
     2000,
 
-    3000,
-
-    2000,
     2000,
 
     2000,
-    7000,
+    2000,
+
+    2000,
+    2000,
     
     2000,
 
@@ -240,35 +243,41 @@ var pauses = [
 
     2000,
 
-    3000,
-    8000,
     2000,
-    12000,
     2000,
-
     2000,
     2000,
     2000,
 
-    4000,
+    2000,
+    2000,
+    2000,
+
+    2000,
    
     2000,
     2000,
     2000,
     2000,
 
-    3000,
+    2000,
     
     2000,
     2000,
     
     2000,
 
-    7000,
     3000,
+    2000,
 
-    600,
-    600, 
-    600,
+    200,
+    200, 
+    1000,
+
     3000,
+    2000
 ]
+
+function end(){
+    $(".continue").toggle();
+}
