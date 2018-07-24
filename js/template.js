@@ -27,6 +27,7 @@ function start(){
     newctr = chapterText.length;
     $(".text-box").empty();
     textTimeout = setTimeout(iterate, pauses[textCtr]);
+
 }
 
 function iterate(){ //main loop
@@ -69,8 +70,7 @@ function addtext(textCtr){
 }
 
 function movedown(){
-    var elem = document.getElementById('text-box');
-    elem.scrollTop = elem.scrollHeight;
+    $(".user-input").scrollTop = $(".user-input").scrollHeight;
 }
 
 function getCharacter(text){
@@ -87,7 +87,7 @@ function getText(text){
 
 function type(){
         if (embyCtr < typeText.length){
-            document.getElementById("user-input").innerHTML += typeText.charAt(embyCtr);
+            $(".user-input").innerHTML += typeText.charAt(embyCtr);
             embyCtr++;
             typingTimeout = setTimeout(type, 50);
         }
@@ -102,8 +102,31 @@ function type(){
             }, 100);
         }
 }
+t
+function configMobile(){
+    var pos = ($(window).width()-306)/2;
+    pos += "px";
+
+    $(".menu")[0].style.left = pos;
+    $(".menu")[0].style.top = '20px';
+
+
+    $(".type-wrap")[0].style.top = '400px';
+    $(".type-wrap")[0].style.width = '300px';
+    $(".type-wrap")[0].style.height = '640px';
+    $(".type-wrap")[0].style.left = pos;
+
+    $(".text-box")[0].style.width = '230px';
+    $(".user-input")[0].style.width = '230px';
+
+    $(".active")[0].style.left = pos;
+    $(".active")[0].style.top = '1000px';
+}
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) configMobile();
+
     $(".continue").toggle();
     
     $('.menu').draggable({
@@ -190,3 +213,4 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = nextChapter;
     });
 });
+
