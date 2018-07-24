@@ -28,7 +28,7 @@ app.get('/latest', (req, res) => {
 });
 
 // Start the server
-const port = 3500;
+const port = process.env.PORT || 3500;
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
