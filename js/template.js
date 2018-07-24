@@ -102,7 +102,7 @@ function type(){
             }, 100);
         }
 }
-t
+
 function configMobile(){
     var pos = ($(window).width()-306)/2;
     pos += "px";
