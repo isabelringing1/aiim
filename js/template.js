@@ -110,7 +110,6 @@ function configMobile(){
     $(".menu")[0].style.left = pos;
     $(".menu")[0].style.top = '20px';
 
-
     $(".type-wrap")[0].style.top = '400px';
     $(".type-wrap")[0].style.width = '300px';
     $(".type-wrap")[0].style.height = '640px';
@@ -121,6 +120,12 @@ function configMobile(){
 
     $(".active")[0].style.left = pos;
     $(".active")[0].style.top = '1000px';
+
+    $(".text-box")[0].innerHTML = '<p>Touch to enter chat.</p>';
+    document.addEventListener('touchend', function(){
+        if (!started)
+            start();
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -194,8 +199,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('.plaintext').addEventListener('click', function() {
         if (started){
-            plaintext = !plaintext;
-            if (plaintext){
+            if (!plaintext){
+                plaintext = !plaintext;
                 for (var i = textCtr; i < chapterText.length; i++){
                     clearTimeout(textTimeout);
                     embyCtr = typeText.length;
@@ -203,8 +208,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 $(".continue").toggle();
             }
-            plaintext? $(".plaintext").text("Chat Mode") : $(".plaintext").text("Read as Plaintext");
-
         }
         
     });
