@@ -49,12 +49,10 @@ function addtext(textCtr){
         console.log(character, text);
         
         if (character == "emby" || character == "mb739"){
-            console.log("emby");
             embyCtr = 0;
             typeText = text;
             setTimeout(resolve, typeText.length*50);
             type();
-            console.log("done typing");
         }
         else{
             $(".text-box").append(chapterText[textCtr]/* + " " + (textCtr+1)*/);
@@ -70,7 +68,7 @@ function addtext(textCtr){
 }
 
 function movedown(){
-    $(".user-input").scrollTop = $(".user-input").scrollHeight;
+    $(".text-box")[0].scrollTop = $(".text-box")[0].scrollHeight;
 }
 
 function getCharacter(text){
@@ -87,7 +85,7 @@ function getText(text){
 
 function type(){
         if (embyCtr < typeText.length){
-            $(".user-input").innerHTML += typeText.charAt(embyCtr);
+            $(".user-input")[0].innerHTML += typeText.charAt(embyCtr);
             embyCtr++;
             typingTimeout = setTimeout(type, 50);
         }
@@ -206,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     embyCtr = typeText.length;
                     $(".text-box").append(chapterText[i]);
                 }
-                $(".continue").toggle();
+                end();
             }
         }
         

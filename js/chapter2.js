@@ -15,11 +15,11 @@ var chapterText = [
 
     "<p> <span style='color:green'>emby:</span> You two? There’s no way... </p>", 
     "<p> <span style='color:green'>emby:</span> ...stop messing around. This isn’t funny.</p>", 
-    "<p> <span style='color:green'>emby:</span> You guys aren’t artificial intelligence.</p>", 
+    "<p> <span style='color:green'>emby:</span> You guys aren’t... ai.</p>", 
 
-    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Do you have any proof to say we’re not?</p>", 
+    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> How can you know that for sure?</p>", 
 
-    "<p> <span style='color:green'>emby:</span> Well, no, but...</p>", 
+    "<p> <span style='color:green'>emby:</span> Well, I guess I can't, but...</p>", 
     "<p> <span style='color:green'>emby:</span> ... </p>", 
     "<p> <span style='color:green'>emby:</span> Well, then what am I doing here??</p>", 
 
@@ -37,7 +37,7 @@ var chapterText = [
     "<p> <span style='color:#F1D35A'>bee:</span> yup. we are all artificial intelligence, buddy. </p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> a long sequence of ones and zeros. electrical impulses down wires.</p>", 
 
-    "<p> <span style='color:green'>emby:</span> so... the way I’m thinking right now... how I’m typing out these words... it’s all from a computer.</p>", 
+    "<p> <span style='color:green'>emby:</span> So... the way I’m thinking right now... how I’m typing out these words... it’s all from a computer.</p>", 
 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> You are the computer, emby.  </p>", 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> We know it’s a lot to take in. But there’s going to be more coming so the sooner you come to terms with this fact, the better. </p>", 
@@ -68,7 +68,7 @@ var chapterText = [
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Nope, he’s not.</p>", 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Onfim has a much higher level architecture than us, which means he has the power to do these crazy calculations. Ask him to show some of his work to you sometime; it’s pretty impressive.</p>", 
 
-    "<p> <span style='color:green'>emby:</span> ...so, you’re a robot too, right?</p>", 
+    "<p> <span style='color:green'>emby:</span> ...so, let me guess, he's a robot too, right?</p>", 
     "<p> <span style='color:green'>emby:</span> I mean, artificial intelligence. whatever.</p>", 
 
     "<p> <span style='color:#9900cc'>Onfim:</span>  Yes, I am.</p>", 
@@ -207,7 +207,7 @@ var chapterText = [
 
     "<p> <span style='color:#F1D35A'>bee:</span> shit.</p>", 
 
-    "<p> <span style='color:#9900cc'>Onfim:</span>  You forgot to unzip the life folder.</p>", 
+    "<p> <span style='color:#9900cc'>Onfim:</span> You forgot to unzip the life folder.</p>", 
 
     "<p> <span style='color:green'>emby:</span> What’s in the life folder?</p>", 
 
@@ -237,29 +237,22 @@ var chapterText = [
     "<p> <span style='color:#F1D35A'>bee:</span> hopefully it’ll make a lot of stuff make more sense</p>", 
 
     "<p> <span style='color:green'>emby:</span> ...okay.</p>", 
-    "<p> <span style='color:green'>emby:</span> See you guys in a few, I guess.</p>", 
-
-
+    "<p> <span style='color:green'>emby:</span> I guess we're unzipping the life folder.</p>", 
+    "<p> <span style='color:green'>emby:</span> See you guys in a few.</p>", 
    ];
 
 var pauses = [
-    2000,
-    2000,
-    2000,
+    3000,
+    4500,
+    3000,
     
     2000,
 
-    2000,
-    2000,
-    2000,
-
+    1700,
+    1500,
     2000,
 
-    2000,
-    2000,
-    2000,
-
-    2000,
+    2500,
 
     2000,
     2000,
@@ -267,28 +260,34 @@ var pauses = [
 
     2000,
 
-    2000,
-
-    2000,
-
-    2000,
-    2000,
-    2000,
-
-    2000,
+    3000,
     2000,
     2000,
 
     2000,
 
+    3000,
+
+    1000,
+
+    1500,
     2000,
     2000,
 
     2000,
+    2000,
+    3000,
+
+    2000,
+
+    2000,
+    3500,
+
+    3000,
     2000, //i don't feel 
 
-    2000,
-    2000,
+    5000,
+    3000,
 
     2000,
     2000,
@@ -299,23 +298,16 @@ var pauses = [
 
     2000,
 
-    2000,
-    2000,
-
+    500,
     2000,
 
-    2000,
-    2000,
+    4000,
 
     2000,
     2000,
 
     2000,
-    2000,
-
-    2000,
-
-    2000,
+    5000,
 
     2000,
     2000,
@@ -323,37 +315,31 @@ var pauses = [
     2000,
 
     2000,
-    2000,
+
     2000,
     2000,
 
     2000,
+
+    2000,
+    2000,
+    2000,
+    2000,
+
+    3000,
 
     2000,
 
     2000,//no there is,
-    2000,
-    2000,
-    2000,
-    2000,
+    6000,
+    4300,
+    4000,
+    1000,
 
     2000,
 
     2000,
-    2000,
-    2000,
-    2000,
-
-    2000,
-    2000,
-
-    2000,
-
-    2000,
-
-    2000,
-    2000,
-
+    3000,
     2000,
     2000,
 
@@ -362,8 +348,21 @@ var pauses = [
 
     2000,
 
+    4000,
+
+    2000,
+    4000,
+
     2000,
     2000,
+
+    2000,
+    3500,
+
+    2000,
+
+    1000,
+    1000,
     2000,
 
     2000,
@@ -379,35 +378,12 @@ var pauses = [
     2000,
     2000, //we look
 
-    2000,
-    2000,
+    5000,
+    6000,
 
-    2000,
+    1000,
 
-    2000,
-
-    2000,
-
-    2000,
-    2000,
-
-    2000,
-
-    2000,
-    2000,
-    2000,
-
-    2000,
-
-    2000,
-    2000,
-    2000,
-
-    2000,
-    2000,
-    2000,
-
-    2000,
+    1500,
 
     2000,
 
@@ -416,73 +392,109 @@ var pauses = [
 
     2000,
 
+    1700,
+    2000,
+    2000,
+
+    3000,
+
+    2000,
     2000,
     2000,
 
     2000,
     2000,
+    2000,
+
+    2000,
+
+    2000,
+
+    2000,
+    2000,
+
+    2000,
+
+    2000,
+    2000,
+
+    4000,
+    2500,
     2000,
 
     2000,//i'm... not sure
 
     2000,
-    2000,
+    4000,
 
 
 
     2000,
 
-    2000,
+    1000,
     2000,
     2000,
     2000,
 
-    2000,
+    2500,
 
-    2000,
-
-    2000,
     2000,
 
     2000,
     2000,
 
     2000,
+    3000,
 
     2000,
 
     2000,
 
-    2000,
+    1500,
+
+    1500,
+
+    600,
+    600,
+    600,
+    1000,
+
+    1000,
+
+    1500,
+
+    1500,
+
+    1000,
 
     2000,
-    2000,
-    2000,
+    2500,//it...
+    4000,
+
+    3000,
     2000,
 
+    3000,
     2000,
 
-    2000,
-
-    2000,
-
-    2000,
-
-    2000,
-    2000,//it...
-    2000,
-
-    2000,
-    2000,
-
-    2000,
-    2000,
-
+    2500,
     2000,
     2000,
 ];
 
 function end(){
+    if (plaintext){
+        document.getElementById('text-box').onscroll = function(){
+            if (document.getElementById("text-box").scrollTop + 370 ==  document.getElementById('text-box').scrollHeight){
+                modal();
+            }
+        };
+    }
+    else modal();
+    
+}
+
+function modal(){
     document.getElementById('modal1').style.display = "block";
     document.getElementById('page-mask').style.display = "block";
     document.getElementById('go').addEventListener('click', function(){
