@@ -26,6 +26,7 @@ function start(){
     started = true;
     newctr = chapterText.length;
     $(".text-box").empty();
+    $(".user-input").empty();
     textTimeout = setTimeout(iterate, pauses[textCtr]);
 
 }
