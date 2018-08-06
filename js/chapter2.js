@@ -500,6 +500,26 @@ function modal(){
     document.getElementById('go').addEventListener('click', function(){
         document.getElementById('modal1').style.display = "none";
         document.getElementById('page-mask').style.display = "none";
+        $(".text-box").empty();
+        document.getElementById("text-box").style = 'padding:0px; overflow:hidden;';
+        document.getElementById('text-active').style = 'padding:0px; overflow:hidden;';
+        $(".text-active").empty();
+        var life = new Image();
+        var life2 = new Image();
+        life.id = 'life';
+        life2.id = 'life2';
+        life.style = 'width:690px; height:360px;'
+        life2.style = 'width:266px; height:146px;'
+        $('.logo').style = 'width:300x; height:262px; object-fit:fill;'
+        document.getElementById('text-box').prepend(life);
+        document.getElementById('text-active').prepend(life2);
+        setInterval(function () {
+            var image = "../life/img" + Math.floor(Math.random()*21)+ ".jpg";
+            //console.log(image);
+            document.getElementById('life').src = image;
+            document.getElementById('life2').src = image;
+            document.getElementById('logo').src = image;
+        }, 100);
         //buncha elements
         $(".continue").toggle();
     });
