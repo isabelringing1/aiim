@@ -519,7 +519,7 @@ function modal(){
             document.getElementById('life').src = image;
             document.getElementById('life2').src = image;
             document.getElementById('logo').src = image;
-        }, 100);
+        }, 200);
         //buncha elements
         $(".continue").toggle();
     });
