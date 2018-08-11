@@ -197,16 +197,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.querySelector('.plaintext').addEventListener('click', function() {
-        if (started){
-            if (!plaintext){
-                plaintext = !plaintext;
-                for (var i = textCtr; i < chapterText.length; i++){
-                    clearTimeout(textTimeout);
-                    embyCtr = typeText.length;
-                    $(".text-box").append(chapterText[i]);
-                }
-                end();
+        if (!plaintext){
+            plaintext = !plaintext;
+            $(".user-input").empty();
+            for (var i = textCtr; i < chapterText.length; i++){
+                clearTimeout(textTimeout);
+                embyCtr = typeText.length;
+               $(".text-box").append(chapterText[i]);
             }
+            end();
         }
         
     });
