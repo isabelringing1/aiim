@@ -10,6 +10,7 @@ var text;
 var textTimeout;
 var typingTimeout;
 var pushTimeout;
+var promiseTimeout;
 
 var rcv = document.createElement('audio');
 rcv.setAttribute('src', 'assets/imrcv.wav');
@@ -47,17 +48,17 @@ function addtext(textCtr){
     return new Promise (function(resolve){
         character = getCharacter(chapterText[textCtr]); //parses for character name
         text = getText(chapterText[textCtr]); //parses for actual text
-        console.log(character, text);
+        console.log(character, text, textCtr);
         
         if (character == "emby" || character == "mb739"){
             embyCtr = 0;
             typeText = text;
-            setTimeout(resolve, typeText.length*50);
+            promiseTimeout = setTimeout(resolve, typeText.length*50);
             type();
         }
         else{
             $(".text-box").append(chapterText[textCtr]/* + " " + (textCtr+1)*/);
-            movedown();
+            movedown($(".text-box"));
             if (!mute){
                 rcv.play();
             }
@@ -68,8 +69,8 @@ function addtext(textCtr){
 
 }
 
-function movedown(){
-    $(".text-box")[0].scrollTop = $(".text-box")[0].scrollHeight;
+function movedown(box){
+    box[0].scrollTop = box[0].scrollHeight;
 }
 
 function getCharacter(text){
@@ -89,12 +90,14 @@ function type(){
             $(".user-input")[0].innerHTML += typeText.charAt(embyCtr);
             embyCtr++;
             typingTimeout = setTimeout(type, 50);
+            movedown($(".user-input"));
+            $(".user-input")[0].scrollTop = $(".user-input")[0].scrollHeight;
         }
         else{ //end
             $(".user-input").empty();
             pushTimeout = setTimeout(function (){
                 $(".text-box").append(chapterText[textCtr-1]);
-                movedown();
+                movedown($(".text-box"));
                 if (!mute){
                     send.play();
                 }
@@ -162,10 +165,22 @@ document.addEventListener('DOMContentLoaded', function() {
             pause = !pause;
 
             if (pause){
+                console.log("pausing, txtctr is ", textCtr);
                 clearTimeout(textTimeout);
-                embyCtr = typeText.length;
+                clearTimeout(typingTimeout);
+                clearTimeout(promiseTimeout);
+                if (character == 'emby'){
+                    $(".user-input").empty();
+                    $(".text-box").append(chapterText[textCtr]);
+                    movedown($(".text-box"));
+                    if (!mute){
+                        send.play();
+                    }
+                    textCtr++;
+                }
             }
             else{ //unpause
+                console.log("unpausing, txtctr is ", textCtr);
                 textTimeout = setTimeout(iterate, pauses[textCtr]);
             }
 
@@ -184,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             embyCtr = typeText.length;
             textCtr++;
-            movedown();
+            movedown($(".text-box"));
         }
     });
 

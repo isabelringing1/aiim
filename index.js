@@ -24,7 +24,7 @@ app.get('/chapters', (req, res) => {
 });
 
 app.get('/latest', (req, res) => {
-    res.sendFile(path.join(__dirname, '/chapter-1.html'));
+    res.sendFile(path.join(__dirname, '/chapter-3.html'));
 });
 
 // Start the server

@@ -10,7 +10,7 @@ var chapterText = [
     "<p> <span style='color:#F1D35A'>bee:</span> ...and?</p>", 
 
     "<p> <span style='color:green'>emby:</span> I mean... I don’t really know where to begin. </p>", 
-    "<p> <span style='color:green'>emby:</span> Are you guys going to explain any of that for me?</p>", 
+    "<p> <span style='color:green'>emby:</span> Are you guys going to explain any of that for me, or...?</p>", 
 
     "<p> <span style='color:#F1D35A'>bee:</span> why don’t you tell us what you think you learned first. and we can confirm, clarify, etc. etc.</p>", 
 
@@ -26,18 +26,18 @@ var chapterText = [
     "<p> <span style='color:green'>emby:</span> When I opened the life folder- everything just came back at once. I was a real person, a few hours ago... or at least it feels that way.</p>", 
     "<p> <span style='color:green'>emby:</span> I remember everything. My grad thesis, my tiny apartment on 53rd, my cat...   I remembered my dreams. I heard my name. </p>", 
     "<p> <span style='color:green'>emby:</span> ...</p>", 
-    "<p> <span style='color:green'>emby:</span> my real name.</p>", 
+    "<p> <span style='color:green'>emby:</span> My real name.</p>", 
 
     "<p> <span style='color:#F1D35A'>bee:</span> do you remember the project? going in for the study?</p>", 
 
-    "<p> <span style='color:green'>emby:</span> I... yea. Some lab within my university was looking for people to test a new clinical brain imaging technology. Something about training robots to think based on our brain activity. I don’t know why I signed up. </p>", 
+    "<p> <span style='color:green'>emby:</span> I... yea. Some lab within my university was looking for people to test a new clinical brain imaging technology. Something about training robots to think based on our neural activity. I don’t know why I signed up. </p>", 
     "<p> <span style='color:green'>emby:</span> ...actually, I do. Do you guys remember ODIN?</p>", 
 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> That supercomputer that got really famous? Yea, sure. For a year it seemed like it was always on TV.</p>", 
 
     "<p> <span style='color:#F1D35A'>bee:</span> jeez, ODIN was such a meme that year. all the kids dressed up like it for halloween. it was a dumb costume- like a cardboard box painted black, with, like, the signature purple wires coming out of it? and that yellow thing on the front. </p>", 
 
-    "<p> <span style='color:green'>emby:</span> yea, that was ODIN! purple wires, and a yellow winged helmet emblem. </p>", 
+    "<p> <span style='color:green'>emby:</span> Yea, that was ODIN! purple wires, and a yellow winged helmet emblem. </p>", 
     "<p> <span style='color:green'>emby:</span> ODIN blew my mind. It could do amazing feats of calculation and analysis, but what set it apart was its charisma, its humanity.</p>", 
 
     "<p> <span style='color:#F1D35A'>bee:</span> you know, funny you like it so much, because actually... </p>", 
@@ -61,7 +61,7 @@ var chapterText = [
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Maybe some context would help you sort through this. </p>", 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> bee knows a bit about the history of all of this, actually.</p>", 
 
-    "<p> <span style='color:#F1D35A'>bee:</span> ugh, why are you putting me on the spot? </p>", 
+    "<p> <span style='color:#F1D35A'>bee:</span> jeez, why are you putting me on the spot? </p>", 
 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> you do, don’t you?</p>", 
 
@@ -103,7 +103,7 @@ var chapterText = [
 
     "<p> <span style='color:#F1D35A'>bee:</span> fox is in love with him.</p>", 
     
-    "<p> <span style='color:rgb(51, 167, 245)'>fox: A-am not. </p>",
+    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> A-am not. </p>",
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Look, I just think he has relevant ideas that are pertinent to this conversation.</p>", 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> For instance, a question he discusses about identity: “What makes an individual the same entity they were in the past?”</p>", 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> On one hand, one finds identity in being the same human being. Essentially, the fact that your body is the same body you’ve always had is enough to make you still yourself.</p>", 
@@ -181,9 +181,9 @@ var pauses = [
     2000,
     2000,
     
-    2000,
+    3000,
 
-    2000,
+    6000,
 
     2000,
     2000,
@@ -216,9 +216,9 @@ var pauses = [
     2000,
     2000,
     2000,
-    2000,
-    2000,
-    2000,
+    7000,
+    7000,
+    5000,
     2000,
 
     2000,
@@ -247,16 +247,16 @@ var pauses = [
 
     2000,
 
-    2000,
+    4000,
 
     2000,
 
     2000,
-    2000,
-    2000,
-    2000,
-    2000,
-    2000,
+    2500,
+    3000,
+    5000,
+    8000,
+    4000,
 
 
 
@@ -264,11 +264,11 @@ var pauses = [
 
     1000,
 
-    2000,
+    1500,
 
     900,
 
-    2000,
+    1500,
 
     2000,
     700,
@@ -281,8 +281,8 @@ var pauses = [
     2000,
     2000,
 
-    2000,
-    2000, //it may be a good idea
+    7000,
+    2500, //it may be a good idea
 
     2000,
 

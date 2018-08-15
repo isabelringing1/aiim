@@ -104,7 +104,7 @@ hr{
 	background: #ffffff;
 	margin-top: 20px;
 	margin-left: 20px;
-	er-radius: 3px;
+	border-radius: 3px;
 	border: 3px inset;
 	overflow: auto;
 	position: relative;
@@ -114,8 +114,8 @@ hr{
 
 .text-active{
 	padding: 10px;
-	width: 266px;
-	height: 166px;
+	width: 240px;
+	height: 120px;
 	background: #ffffff;
 	margin-top: 10px;
 	margin-left: 20px;
