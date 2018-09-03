@@ -85,7 +85,7 @@ var chapterText = [
 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Oh. Well, whatever floats your boat, I guess. Here you go...</p>", 
 
-    "<p> [NICKNAME SET FOR mb839: emby]</p>",
+    "<p> --NICKNAME SET FOR mb839: emby--</p>",
 
     "<p> <span style='color:#F1D35A'>bee:</span> now you have a real name! good job.</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> by the way, any strong inclination towards pronouns?</p>", 

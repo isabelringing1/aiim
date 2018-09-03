@@ -1,4 +1,4 @@
-var nextChapter = "/chapter-3.html";
+var nextChapter = "/chapter-4.html";
 
 var chapterText = [
     "<p> <span style='color:green'>emby:</span> ...I’m back.</p>", 
@@ -300,7 +300,11 @@ function end(){
     if (plaintext){
         document.getElementById('text-box').onscroll = function(){
             if (document.getElementById("text-box").scrollTop + 370 ==  document.getElementById('text-box').scrollHeight){
-                modal();
+                if (!mobile) {
+                    modal();
+                }
+                else
+                    $(".continue").show();
             }
         };
     }

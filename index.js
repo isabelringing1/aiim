@@ -15,6 +15,22 @@ app.get('/chapter-1', (req, res) => {
     res.sendFile(path.join(__dirname, '/chapter-1.html'));
 });
 
+app.get('/chapter-2', (req, res) => {
+    res.sendFile(path.join(__dirname, '/chapter-2.html'));
+});
+
+app.get('/chapter-3', (req, res) => {
+    res.sendFile(path.join(__dirname, '/chapter-3.html'));
+});
+
+app.get('/chapter-4', (req, res) => {
+    res.sendFile(path.join(__dirname, '/chapter-4.html'));
+});
+
+app.get('/chapter-5', (req, res) => {
+    res.sendFile(path.join(__dirname, '/chapter-4.html'));
+});
+
 app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, '/about.html'));
 });
@@ -24,7 +40,7 @@ app.get('/chapters', (req, res) => {
 });
 
 app.get('/latest', (req, res) => {
-    res.sendFile(path.join(__dirname, '/chapter-3.html'));
+    res.sendFile(path.join(__dirname, '/chapter-6.html'));
 });
 
 // Start the server

@@ -486,12 +486,19 @@ function end(){
     if (plaintext){
         document.getElementById('text-box').onscroll = function(){
             if (document.getElementById("text-box").scrollTop + 370 ==  document.getElementById('text-box').scrollHeight){
-                modal();
+                if (!mobile) {
+                    modal();
+                }
+                else{
+                    fullImage();
+                }
             }
         };
     }
-    else modal();
-    
+    else if (!mobile) {
+        modal();
+    }
+    else fullImage();
 }
 
 function modal(){
@@ -521,6 +528,31 @@ function modal(){
             document.getElementById('logo').src = image;
         }, 200);
         //buncha elements
-        $(".continue").toggle();
+        $(".continue").show();
     });
+}
+
+function fullImage(){
+    $(".text-box").empty();
+        document.getElementById("text-box").style = 'padding:0px; width:260px; overflow:hidden;';
+        document.getElementById('text-active').style = 'padding:0px; overflow:hidden;';
+        $(".text-active").empty();
+        var life = new Image();
+        var life2 = new Image();
+        life.id = 'life';
+        life2.id = 'life2';
+        life.style = 'width:260px;height:360px; object-fit:fill;'
+        life2.style = 'width:266px; height:146px;'
+        $('.logo').style = 'width:300x; height:262px; object-fit:fill;'
+        document.getElementById('text-box').prepend(life);
+        document.getElementById('text-active').prepend(life2);
+        setInterval(function () {
+            var image = "../life/img" + Math.floor(Math.random()*21)+ ".jpg";
+            //console.log(image);
+            document.getElementById('life').src = image;
+            document.getElementById('life2').src = image;
+            document.getElementById('logo').src = image;
+        }, 200);
+        $(".continue").show();
+
 }

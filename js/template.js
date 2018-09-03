@@ -11,12 +11,12 @@ var textTimeout;
 var typingTimeout;
 var pushTimeout;
 var promiseTimeout;
+var mobile;
 
 var rcv = document.createElement('audio');
 rcv.setAttribute('src', 'assets/imrcv.wav');
 var send = document.createElement('audio');
 send.setAttribute('src', 'assets/imsend.wav');
-
 
 document.addEventListener('keyup', function(){
     if (!started)
@@ -37,6 +37,9 @@ function iterate(){ //main loop
         addtext(textCtr).then(() => {
             textTimeout = setTimeout(iterate, pauses[textCtr]);
             textCtr++;
+            if (typeof ctrListener != "undefined"){
+                ctrListener(textCtr);
+            }
         });
     }
     else{
@@ -106,6 +109,7 @@ function type(){
 }
 
 function configMobile(){
+    mobile = true;
     var pos = ($(window).width()-306)/2;
     pos += "px";
 
@@ -124,6 +128,7 @@ function configMobile(){
     $(".active")[0].style.top = '1000px';
 
     $(".text-box")[0].innerHTML = '<p>Touch to enter chat.</p>';
+
     document.addEventListener('touchend', function(){
         if (!started)
             start();
