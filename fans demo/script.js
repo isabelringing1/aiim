@@ -53,7 +53,7 @@ function drawFanArray(){
 
 function getAngle(i, j, pattern){
     if (pattern==1){
-        angle = Math.sin(ctr * Math.PI - Math.PI/2 + (i%2)) + 1;
+        angle = Math.sin(ctr * Math.PI - Math.PI/2 + (1-i/4)) + 1;
     }
     else if (pattern==2){
         angle = Math.sin(ctr * Math.PI - Math.PI/2 + (1-j/4)) + 1;
