@@ -5,6 +5,8 @@ var plaintext = false;
 var textCtr = 0;
 var embyCtr = 0;
 var typeText = "default";
+var amTyping = false;
+var dumped = false;
 var character;
 var text;
 var textTimeout;
@@ -36,7 +38,8 @@ function iterate(){ //main loop
     if (textCtr < chapterText.length){
         addtext(textCtr).then(() => {
             textTimeout = setTimeout(iterate, pauses[textCtr]);
-            textCtr++;
+            if (!dumped) textCtr++;
+            else dumped = false;
             if (typeof ctrListener != "undefined"){
                 ctrListener(textCtr);
             }
@@ -90,6 +93,7 @@ function getText(text){
 
 function type(){
         if (embyCtr < typeText.length){
+            amTyping = true;
             $(".user-input")[0].innerHTML += typeText.charAt(embyCtr);
             embyCtr++;
             typingTimeout = setTimeout(type, 50);
@@ -97,6 +101,7 @@ function type(){
             $(".user-input")[0].scrollTop = $(".user-input")[0].scrollHeight;
         }
         else{ //end
+            amTyping = false;
             $(".user-input").empty();
             pushTimeout = setTimeout(function (){
                 $(".text-box").append(chapterText[textCtr-1]);
@@ -195,14 +200,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('.progress').addEventListener('click', function() {
         if (started){
-            if (character != "emby" && character != "mb739"){
+            console.log("appending text ", textCtr);
+            if (amTyping){
+                $(".user-input").empty();
+                clearTimeout(typingTimeout);
                 $(".text-box").append(chapterText[textCtr]);
+                amTyping = false; dumped = true;
             }
             else{
-                $(".user-input").empty();
-                $(".text-box").append(chapterText[textCtr-1]);
+                $(".text-box").append(chapterText[textCtr]);
             }
-            embyCtr = typeText.length;
+            ctrListener(textCtr);
             textCtr++;
             movedown($(".text-box"));
         }
