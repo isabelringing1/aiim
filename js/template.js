@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 clearTimeout(textTimeout);
                 clearTimeout(typingTimeout);
                 clearTimeout(promiseTimeout);
-                if (character == 'emby'){
+                if (character == 'emby' || character == 'mb739'){
                     $(".user-input").empty();
                     $(".text-box").append(chapterText[textCtr]);
                     movedown($(".text-box"));
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('.progress').addEventListener('click', function() {
         if (started){
-            if (character != "emby"){
+            if (character != "emby" && character != "mb739"){
                 $(".text-box").append(chapterText[textCtr]);
             }
             else{
