@@ -315,3 +315,9 @@ function modal(){
     document.getElementById('modal1').style.display = "block";
     document.getElementById('page-mask').style.display = "block";
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.continue2').addEventListener('click', function() {
+        window.location.href = nextChapter;
+    });
+});

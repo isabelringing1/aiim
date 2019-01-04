@@ -163,7 +163,7 @@ var chapterText = [
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Yes</p>", 
     "<p> <span style='color:green'>emby:</span> yes!</p>", 
 
-    "<p> <span style='color:#9900cc'>Onfim:</span> <span style='color:red'>“SEND HELP TO HOUSTON CAMP IF ABLE. SICK AND NEED FOOD AND WATER. MERCY GENERAL HOSPITAL. PLEASE.”</span></p>", 
+    "<p> <span style='color:#9900cc'>Onfim:</span> <span style='color:red'>“SEND HELP TO HOUSTON CAMP IF ABLE. SICK AND NEED FOOD AND WATER. HOUSTON METHODIST HOSPITAL. PLEASE.”</span></p>", 
 
     //dumbfound beat of silence
 
@@ -178,7 +178,7 @@ var chapterText = [
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> The hospital’s computer may still be around, and if we can power it up, we may be able to reach them.</p>", 
 
     "<p> <span style='color:#F1D35A'>bee:</span> oh my god, you’re right.</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> mercy general hospital... houston... the architecture is all still here.</p>", 
+    "<p> <span style='color:#F1D35A'>bee:</span> houston methodist hospital... the architecture is all still here.</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> okay, okay, it looks like i can log into the system. let's go, guys. let’s go.</p>", 
 
     "<p>--bee HAS LEFT.--</p>", 
