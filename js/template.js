@@ -210,7 +210,9 @@ document.addEventListener('DOMContentLoaded', function() {
             else{
                 $(".text-box").append(chapterText[textCtr]);
             }
-            ctrListener(textCtr);
+            if (typeof ctrListener != "undefined"){
+                ctrListener(textCtr);
+            }
             textCtr++;
             movedown($(".text-box"));
         }
