@@ -35,9 +35,9 @@ var chapterText = [
 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> That supercomputer that got really famous? Yea, sure. For a year it seemed like it was always on TV.</p>", 
 
-    "<p> <span style='color:#F1D35A'>bee:</span> jeez, ODIN was such a meme that year. all the kids dressed up like it for halloween. it was a dumb costume- like a cardboard box painted black, with, like, the signature purple wires coming out of it? and that yellow thing on the front. </p>", 
+    "<p> <span style='color:#F1D35A'>bee:</span> jeez, ODIN was such a meme that year. all the kids dressed up like it for halloween. it was a dumb costume- like a cardboard box painted black, with, like, the signature purple screen and wires? and that yellow thing on the front. </p>", 
 
-    "<p> <span style='color:green'>emby:</span> Yea, that was ODIN! purple wires, and a yellow winged helmet emblem. </p>", 
+    "<p> <span style='color:green'>emby:</span> Yea, that was ODIN! purple with a yellow winged helmet emblem. </p>", 
     "<p> <span style='color:green'>emby:</span> ODIN blew my mind. It could do amazing feats of calculation and analysis, but what set it apart was its charisma, its humanity.</p>", 
 
     "<p> <span style='color:#F1D35A'>bee:</span> you know, funny you like it so much, because actually... </p>", 

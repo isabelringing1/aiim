@@ -55,7 +55,7 @@ var chapterText = [
     "<p> <span style='color:#9900cc'>Onfim:</span> First, you should understand that my portal into the outside world was through the internet. That’s how I learned, how I knew current events, how I was able to talk to other humans then and external artificial intelligence now. </p>", 
     "<p> <span style='color:#9900cc'>Onfim:</span> In other words, it was absolutely crucial to knowing what’s going on in the outside world. </p>", 
     "<p> <span style='color:#9900cc'>Onfim:</span> You ask if human extinction was caused by something catastrophic. Something extravagant.</p>", 
-    "<p> <span style='color:#9900cc'>Onfim:</span> No, instead... it seems like on November 10th, 2031, the internet just shut off.</p>", 
+    "<p> <span style='color:#9900cc'>Onfim:</span> No, instead... it seems like on November 10th, 2051, the internet just shut off.</p>", 
     
     "<p> <span style='color:green'>emby:</span> Shut off? The internet can’t work like that. Like a light switch.</p>", 
     
