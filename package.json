@@ -19,7 +19,8 @@
   "homepage": "https://github.com/isabelringing1/aiim#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "express-static": "^1.2.5",
+    "express-static": "^1.2.6",
+    "gsap": "^2.1.2",
     "jquery": "^3.3.1",
     "nodemon": "^1.17.5",
     "popper.js": "^1.14.3",

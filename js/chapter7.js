@@ -163,7 +163,7 @@ var chapterText = [
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Yes</p>", 
     "<p> <span style='color:green'>emby:</span> yes!</p>", 
 
-    "<p> <span style='color:#9900cc'>Onfim:</span> <span style='color:red'>“SEND HELP TO HOUSTON CAMP IF ABLE. SICK AND NEED FOOD AND WATER. HOUSTON METHODIST HOSPITAL. PLEASE.”</span></p>", 
+    "<p> <span style='color:#9900cc'>Onfim:</span> <span style='color:red'>“SEND HELP TO HOUSTON CAMP IF ABLE. NEED FOOD AND WATER ASAP. HOUSTON METHODIST HOSPITAL. PLEASE.”</span></p>", 
 
     //dumbfound beat of silence
 

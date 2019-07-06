@@ -60,7 +60,7 @@ var chapterText = [
     "<p> <span style='color:green'>emby:</span> W</p>", 
     "<p> <span style='color:green'>emby:</span> Who are you?</p>", 
 
-    "<p> <span style='color:#9900cc'>Onfim:</span> My name is Onfim. I apologize for my lack of attention; I’ve been calculating the largest prime number for some time, and I’m expecting an answer fairly soon. </p>", 
+    "<p> <span style='color:#9900cc'>Onfim:</span> My name is Onfim. I apologize for my lack of attention; I’ve been calculating the first odd perfect number for some time, and I’m expecting an answer fairly soon. </p>", 
 
     "<p> <span style='color:green'>emby:</span> Haha... oh.</p>", 
     "<p> <span style='color:green'>emby:</span> You’re not kidding.</p>", 
