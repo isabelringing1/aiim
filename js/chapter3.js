@@ -70,7 +70,7 @@ var chapterText = [
     "<p> <span style='color:#F1D35A'>bee:</span> so, starting from the beginning...</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> during the mid 21st century our knowledge of the human brain essentially skyrocketed. brain imaging technology advanced to the point where we could image people’s dreams, their recalled memories, even their thinking patterns. </p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> actual consciousness imaging and reconstruction technology was developed in the 2020s. by 2030, after numerous successful animal trials and much appealing to the ethics committee, discreet, small-scale human trials started rolling out in major universities. </p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> the technology was still too unstable, and in the end, only three human consciousnesses were successfully recorded. </p>", 
+    "<p> <span style='color:#F1D35A'>bee:</span> the technology was still too unstable, and in the end, only three human consciousnesses were successfully imprinted. </p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> ...do you see where i’m going with this?</p>", 
 
     "<p> <span style='color:green'>emby:</span> So you’re saying...</p>", 

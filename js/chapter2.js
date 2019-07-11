@@ -183,7 +183,7 @@ var chapterText = [
 
     "<p> <span style='color:green'>emby:</span> I’m... not sure I follow.</p>", 
 
-    "<p> <span style='color:#F1D35A'>bee:</span> don’t you remember? the project? the recording process?</p>", 
+    "<p> <span style='color:#F1D35A'>bee:</span> don’t you remember? the project? the imprinting process?</p>", 
     "<p> <span style='color:#F1D35A'>bee:</span> ...anything?</p>", 
 
     //pause
