@@ -5,6 +5,7 @@ var SELECTOR_SWITCHER_TV = '#switcher-tv';
 var isTurnedOn = true;
 var timeline;
 var entry = 0;
+var mobile = false;
 
 function buildTimeline() {
     timeline = new TimelineMax({
@@ -27,6 +28,7 @@ function buildTimeline() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) configMobile();
     buildTimeline();
     getNextEntry();
     setInterval(setRandomCoordinates, 200);
@@ -52,6 +54,25 @@ function getNextEntry(){
             })
         };
     };
+}
+
+function configMobile(){
+    mobile = true;
+    var offset = ($(window).width()-306)/2;
+    var width = $(window).width() - offset*2;
+    width += "px";
+    offset += "px";
+
+    $(".menu")[0].style.left = offset;
+    $(".menu")[0].style.top = '20px';
+
+    $(".frame")[0].style.top = '330px';
+    $(".frame")[0].style.width = width;
+    $(".frame")[0].style.height = '640px';
+    $(".frame")[0].style.left = offset;
+
+    $(".locator")[0].style.left = offset;
+    $(".locator")[0].style.top = '1000px';
 }
 
 var entryArray =[
