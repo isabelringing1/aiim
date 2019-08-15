@@ -29,7 +29,7 @@ function buildTimeline() {
 document.addEventListener('DOMContentLoaded', function() {
     buildTimeline();
     getNextEntry();
-    setInterval(setRandomCoordinates, 150);
+    setInterval(setRandomCoordinates, 200);
 });
 
 function setRandomCoordinates(){
@@ -37,7 +37,7 @@ function setRandomCoordinates(){
     var num2 = (Math.random() * 100).toString();
     var num3 = (Math.random() * 100).toString();
     var num4 = (Math.random() * 100).toString(); 
-    document.getElementById("coordinates").innerHTML = "N" + num1.substring(0, 2) + "° " + num2.substring(0,4) + " W" + num3.substring(0, 2) + "° " + num4.substring(0,4);
+    document.getElementById("coordinates").innerHTML = "N" + num1.substring(0, 2) + "° " + num2.substring(0,6) + " W" + num3.substring(0, 2) + "° " + num4.substring(0,6);
 }
 
 function getNextEntry(){
