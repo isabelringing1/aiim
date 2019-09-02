@@ -52,7 +52,12 @@ function getNextEntry(){
             document.getElementById('next').addEventListener("click", function() {
                 getNextEntry();
             })
-        };
+        }
+        else {
+            document.getElementById('next').addEventListener("click", function() {
+                window.location.href = "/chapter-9";
+            })
+        }
     };
 }
 
@@ -157,7 +162,7 @@ entry yesterday gave me an idea- I always thought knowing morse code was a usele
 <p> Ẅ̵͖h̶̛̭̽a̷̹͝t̷̬̄̊ ̷̮̝̈t̵̳͊h̷̳̥͆̒ë̵̼́̓ ̸̺́ͅh̸̝̏͠e̴͇̭̋͛ḻ̸̬̈́l̶͉̳͑?̷̺̺̓̕ ̸̖̉͌W̸̖̥̄̿ḣ̸͓̞a̴̭̚t̶̼́'̸̟͆s̴̳̫̊ ̵̯͔̈́Ȧ̵͖̻Ǐ̴̝̓Ỉ̷̱̅M̷̢̪̕?̸̯̩̔̿</p>\
 <p style='color:red'>connecting... 65%</p>\
 <p style='color:red'>connecting... 85%</p>\
-<p id='next'>TO BE CONTINUED ></p>"
+<p id='next'>CONTINUE ></p>"
 ]
 
 var nextEntry = "<p id='next'>NEXT ENTRY</p>";

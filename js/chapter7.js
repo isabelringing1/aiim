@@ -175,11 +175,11 @@ var chapterText = [
     "<p> <span style='color:#F1D35A'>bee:</span> the first human we’ve seen in 300 years.</p>", 
 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Well, what are we waiting for? </p>", 
-    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> The hospital’s computer may still be around, and if we can power it up, we may be able to reach them.</p>", 
+    "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> We have access to this person’s IP, don’t we? We can create a direct connection from AIIM to their device. </p>", 
 
     "<p> <span style='color:#F1D35A'>bee:</span> oh my god, you’re right.</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> houston methodist hospital... the architecture is all still here.</p>", 
-    "<p> <span style='color:#F1D35A'>bee:</span> okay, okay, it looks like i can log into the system. let's go, guys. let’s go.</p>", 
+    "<p> <span style='color:#F1D35A'>bee:</span>okay, locating this person’s device... yea, it’s showing up somewhere in houston. this has to be it.</p>", 
+    "<p> <span style='color:#F1D35A'>bee:</span> okay, okay, it looks like i can create a connection. ready, guys? let’s go.</p>", 
 
     "<p>--bee HAS LEFT.--</p>", 
 

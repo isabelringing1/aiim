@@ -43,6 +43,10 @@ app.get('/diary', (req, res) => {
     res.sendFile(path.join(__dirname, '/diary.html'));
 });
 
+app.get('/chapter-9', (req, res) => {
+    res.sendFile(path.join(__dirname, '/chapter-9.html'));
+});
+
 app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, '/about.html'));
 });
@@ -52,7 +56,7 @@ app.get('/chapters', (req, res) => {
 });
 
 app.get('/latest', (req, res) => {
-    res.sendFile(path.join(__dirname, '/diary.html'));
+    res.sendFile(path.join(__dirname, '/chapter-9.html'));
 });
 
 // Start the server
