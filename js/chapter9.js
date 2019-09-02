@@ -111,7 +111,7 @@ var chapterText = [
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> If basic infrastructure is intact, I think you’ll be able to follow old roads fine.</p>",
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> So here goes...</p>",
 
-    "<img id='map1' src='assets/map1.png' style='width:60%'>",
+    "<img id='map1' src='assets/Map1.png' style='width:60%'>",
     /*map1*/
 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> Do you see where I marked your location with an X?</p>",
@@ -134,7 +134,7 @@ var chapterText = [
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> I think it’s our safest bet, and it’s only around a 20 minute walk for you, Zoey.</p>",
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> I’ll update the map with the fastest route.</p>",
 
-    "<img id='map2' src='assets/map2.png' style='width:60%'>",
+    "<img id='map2' src='assets/Map2.png' style='width:60%'>",
     /*map2*/
 
     "<p> <span style='color:rgb(51, 167, 245)'>fox:</span> You said you could purify water, right?</p>",
