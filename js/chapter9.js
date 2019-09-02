@@ -444,6 +444,19 @@ var pauses = [
     2000
 ];
 
+var mobile = false;
+document.addEventListener('DOMContentLoaded', function() {
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) mobile = true;
+    document.getElementsByClassName('plaintext')[0].addEventListener('click', function() {
+        if (mobile){
+            setTimeout(function (){
+                document.getElementById("map1").style.width = "100%";
+                document.getElementById("map2").style.width = "100%";
+            }, 100);
+        }
+    });
+});
+
 function end(){
     $(".continue").toggle();
 }
@@ -459,9 +472,16 @@ function ctrListener(ctr){
             document.getElementById('zoey-name').innerHTML = "Zoey";
         }, 2000);  
     }
-    else if (ctr == 68 || ctr == 81){
+    else if (ctr == 68){
         mapTimeout = setTimeout(function (){
+            if (mobile) document.getElementById("map1").style.width = "100%";
             document.getElementById("text-box").scrollTop += document.getElementById("map1").height;
+        }, 2200);
+    }
+    else if (ctr == 81){
+        mapTimeout = setTimeout(function (){
+            if (mobile) document.getElementById("map2").style.width = "100%";
+            document.getElementById("text-box").scrollTop += document.getElementById("map2").height;
         }, 2200);
     }
     else if (ctr == 106){
