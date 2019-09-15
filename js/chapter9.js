@@ -1,4 +1,4 @@
-var nextChapter = "/chapters";
+var nextChapter = "/chapter-10.html";
 
 var chapterText = [
     "<p> <span style='color:red'>AIIM has successfully connected to this device.</span>",
