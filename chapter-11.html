@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="en">
-
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Chapters- AIIM</title>
-  <script src="js/custom-lite.js"></script>
+  <title>AIIM</title>
+
+  <script src="js/chapter11.js"></script>
+  <script src="js/template.js"></script>
+
   <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>    
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -23,8 +26,8 @@
 
     gtag('config', 'UA-122824068-1');
   </script>
-</head>
 
+</head>
 <body>
 
 <div class="menu">
@@ -40,33 +43,45 @@
 
 </div>
 
+<div class = "active">
+    <div class = "header-bar">
+        <img src = "assets/boxes.png" style = "width: 65px; float: right; padding-top: 3px; padding-right: 3px;">
+    </div>
+    <div class = "text-active">
+      <p>
+      <b>&#9662 Online</b> <br>
+      <div style = "padding-left: 20px; color: rgb(25, 125, 255);">
+          <span id = "zoey"> <span id = "zoey-name" style='color:red'>Zoey</span> &#9679 <br></span>
+          <span id = 'bee'><span style='color:#F1D35A'>bee</span> &#9679<br></span>
+          <span id = 'fox'><span style='color: rgb(51, 167, 245)'>fox </span> &#9679 <br></span>
+          <span id = "onfim"> <span style='color:#9900cc'>Onfim</span> &#9679 <br></span>
+      </div>
+      </p>
+    </div>
+</div>
 
 <div class="wrap">
   <div class="type-wrap" id = "type-wrap">
 
     <div class = "header-bar" style = "padding-top: 4px; padding-left: 7px; color: white;">
-      Chapters
+      Chapter 11
         <img src = "assets/boxes.png" style = "width: 65px; float: right; padding-top: 3px; padding-right: 3px;">
     </div>
-
+    
     <div class= "text-box" id = "text-box">
-        PART 1<br>
-       <a href = "/chapter-1">Chapter 1</a>- A Wake Up Call<br>
-       <a href = "/chapter-2">Chapter 2</a>- What is this?<br>
-       <a href = "/chapter-3">Chapter 3</a>- Who am I?<br>
-       <a href = "/chapter-4">Chapter 4</a>- Bee<br>
-       <a href = "/chapter-5">Chapter 5</a>- Onfim<br>
-       <a href = "/chapter-6">Chapter 6</a>- Fox<br>
-       <a href = "/chapter-7">Chapter 7</a>- What Actually Happened<br> <br>
-       PART 2<br>
-       <a href = "/diary">Chapter 8</a>- A Diary<br>
-       <a href = "/chapter-9">Chapter 9</a>- Oh, Hey<br>
-       <a href = "/chapter-10">Chapter 10</a>- A Plan<br>
-       <a href = "/chapter-11">Chapter 11</a>- San Antonio<br>
+        <p> Press any key to start chat. </p>
     </div>
     <div class = "user-input" id = "user-input">
     </div>
-</div>
+
+    <button class="pause">Pause</button>
+    <button class="progress">Progress</button>
+    <button class="mute">Mute</button>
+    <button class="plaintext">Load All</button>
+    <button  class="continue"style = "border-color: blue;">Continue</button>
+
+  </div>
+
 </div>
 
 </body>

@@ -92,25 +92,25 @@ function getText(text){
 }
 
 function type(){
-        if (embyCtr < typeText.length){
-            amTyping = true;
-            $(".user-input")[0].innerHTML += typeText.charAt(embyCtr);
-            embyCtr++;
-            typingTimeout = setTimeout(type, 50);
-            movedown($(".user-input"));
-            $(".user-input")[0].scrollTop = $(".user-input")[0].scrollHeight;
-        }
-        else{ //end
-            amTyping = false;
-            $(".user-input").empty();
-            pushTimeout = setTimeout(function (){
-                $(".text-box").append(chapterText[textCtr-1]);
-                movedown($(".text-box"));
-                if (!mute){
-                    send.play();
-                }
-            }, 100);
-        }
+    if (embyCtr < typeText.length){
+        amTyping = true;
+        $(".user-input")[0].innerHTML += typeText.charAt(embyCtr);
+        embyCtr++;
+        typingTimeout = setTimeout(type, 50);
+        movedown($(".user-input"));
+        $(".user-input")[0].scrollTop = $(".user-input")[0].scrollHeight;
+    }
+    else{ //end
+        amTyping = false;
+        $(".user-input").empty();
+        pushTimeout = setTimeout(function (){
+            $(".text-box").append(chapterText[textCtr-1]);
+            movedown($(".text-box"));
+            if (!mute){
+                send.play();
+            }
+        }, 100);
+    }
 }
 
 function configMobile(){
@@ -244,4 +244,3 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = nextChapter;
     });
 });
-
