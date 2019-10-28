@@ -1,4 +1,4 @@
-var nextChapter = "/chapters"
+var nextChapter = "/chapter-12"
 
 const NUM_ARROWS = 7
 const ARROW_POS = 0
