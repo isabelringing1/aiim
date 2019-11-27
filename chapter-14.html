@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>AIIM</title>
+
+  <script src="js/chapter14.js"></script>
+  <script src="js/template.js"></script>
+
+  <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="icon" type="image/ico" href="assets/favricon.ico">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122824068-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122824068-1');
+  </script>
+
+</head>
+<body>
+
+<div class="menu">
+
+  <div class = "header-bar">
+    <img src = "assets/boxes.png" style = "width: 65px; float: right; padding-top: 3px; padding-right: 3px;">
+  </div>
+
+  <img src = "assets/logo.png"  style = "width: 280px; padding: 10px;">
+  <div style = "text-align: center;">
+      <a href= "/about">about</a> | <a href= "/chapters">chapters</a> | <a href= "/latest">latest</a>
+  </div>
+
+</div>
+
+<div class = "active">
+    <div class = "header-bar">
+        <img src = "assets/boxes.png" style = "width: 65px; float: right; padding-top: 3px; padding-right: 3px;">
+    </div>
+    <div class = "text-active">
+      <p>
+      <b>&#9662 Online</b> <br>
+      <div style = "padding-left: 20px; color: rgb(25, 125, 255);">
+          <span id = "zoey"> <span id = "zoey-name" style='color:red'>Zoey</span> &#9679 <br></span>
+      </div>
+      </p>
+    </div>
+</div>
+
+<div class="wrap">
+  <div class="type-wrap" id = "type-wrap">
+
+    <div class = "header-bar" style = "padding-top: 4px; padding-left: 7px; color: white;">
+      Chapter 14
+        <img src = "assets/boxes.png" style = "width: 65px; float: right; padding-top: 3px; padding-right: 3px;">
+    </div>
+    
+    <div class= "text-box" id = "text-box">
+        <p> Press any key to start chat. </p>
+    </div>
+    <div class = "user-input" id = "user-input">
+    </div>
+
+    <button class="pause">Pause</button>
+    <button class="progress">Progress</button>
+    <button class="mute">Mute</button>
+    <button class="plaintext">Load All</button>
+    <button  class="continue"style = "border-color: blue;">To be continued</button>
+
+  </div>
+</div>
+
+<div id="restart1" class="restart">
+  <div class="restart-bars" style="top:0;"></div>
+  <img src="assets/glare.png" id="glare">
+  <img src="assets/top_bar.png" id="top_bar" style="position:absolute;">
+  <img src="assets/shutdown.png" id="shutdown" style="display: none; height: 15%; margin-left: 50%; padding-top: 300px;">
+  <img src="assets/bottom_bar.png" id="bottom_bar" style="position:absolute;">
+  <div class="restart-bars" style="height: 12%; bottom:0; position: absolute;"></div>
+</div>
+
+<div id="restart2" class="restart" style="background:black">
+  <img id="wxp_scroll" src="assets/wxp_scroll.gif">
+  <img id="ms_copyright" src="assets/ms_copyright.png">
+  <img id="ms_logo" src="assets/ms_logo.png">
+</div>
+
+<div id="restart3" class="restart">
+  <div class="restart-bars" style="top:0;"></div>
+  <img src="assets/glare.png" id="glare">
+  <img src="assets/top_bar.png" id="top_bar" style="position:absolute;">
+  <img src="assets/welcome.png" id="welcome" style="display: none; height: 5%; margin-left: 50%; padding-top: 300px;">
+  <img src="assets/bottom_bar.png" id="bottom_bar" style="position:absolute;">
+  <div class="restart-bars" style="height: 12%; bottom:0; position: absolute;"></div>
+</div>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-var nextChapter = "/chapters"
+var nextChapter = "/chapter-14"
 
 var chapterText = [
     "<p> <span style='color:red'>Zoey:</span> Hey y’all, just arrived in El Paso.</p>",
