@@ -162,6 +162,7 @@ function typeOnfim(){
 
 function configMobile(){
     mobile = true;
+    console.log("configing for mobile")
     var pos = ($(window).width()-306)/2;
     pos += "px";
 
@@ -179,10 +180,12 @@ function configMobile(){
     $(".active")[0].style.left = pos;
     $(".active")[0].style.top = '1000px';
 
-    $(".text-box")[0].innerHTML = '<p>Touch to enter chat.</p>';
+    $(".text-box")[0].innerHTML = '<p>Touch to enter chat.</p> <br> WARNING: this chapter does not work well with mobile yet. Please use the desktop version while this is being fixed.';
 
     document.addEventListener('touchend', function(){
         if (!started)
+            typingText = chapterText;
+            typingPauses = pauses;
             start();
     });
 }
