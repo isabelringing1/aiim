@@ -67,6 +67,14 @@ app.get('/chapter-14', (req, res) => {
     res.sendFile(path.join(__dirname, '/chapter-14.html'));
 });
 
+app.get('/chapter-15', (req, res) => {
+    res.sendFile(path.join(__dirname, '/chapter-15.html'));
+});
+
+app.get('/chapter-16', (req, res) => {
+    res.sendFile(path.join(__dirname, '/chapter-16.html'));
+});
+
 app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, '/about.html'));
 });
@@ -76,7 +84,7 @@ app.get('/chapters', (req, res) => {
 });
 
 app.get('/latest', (req, res) => {
-    res.sendFile(path.join(__dirname, '/chapter-14.html'));
+    res.sendFile(path.join(__dirname, '/chapter-15.html'));
 });
 
 

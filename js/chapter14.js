@@ -1,4 +1,4 @@
-var nextChapter = "/chapters"
+var nextChapter = "/chapter-15"
 
 var shownRestart = false;
 

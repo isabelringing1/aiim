@@ -21,8 +21,9 @@ var send = document.createElement('audio');
 send.setAttribute('src', 'assets/imsend.wav');
 
 document.addEventListener('keyup', function(){
-    if (!started)
+    if (!started){
         start();
+    }
 });
 
 function start(){
@@ -230,11 +231,15 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!plaintext){
             plaintext = !plaintext;
             $(".user-input").empty();
+            clearTimeout(textTimeout);
+            clearTimeout(typingTimeout);
+            clearTimeout(promiseTimeout);
+            clearTimeout(pushTimeout);
             for (var i = textCtr; i < chapterText.length; i++){
-                clearTimeout(textTimeout);
                 embyCtr = typeText.length;
-               $(".text-box").append(chapterText[i]);
+                $(".text-box").append(chapterText[i]);
             }
+            started = false;
             end();
         }
         
