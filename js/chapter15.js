@@ -729,9 +729,7 @@ function credits(){
 function setScroll(){ //triggered when plaintext is hit; enables valhalla to show
     document.getElementById('text-box').onscroll = function(){
         if (document.getElementById("text-box").scrollTop + 370 ==  document.getElementById('text-box').scrollHeight){
-            if (!mobile) {
-                kickoffValhalla();
-            }
+            kickoffValhalla();
         }
     };
 }
