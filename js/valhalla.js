@@ -139,7 +139,8 @@ function init() {
 function onWindowResize() {
     SCREEN_WIDTH = window.innerWidth;
     SCREEN_HEIGHT = window.innerHeight;
-    renderer.setSize(690, 345); //change so it's not hard coded
+    if (!mobile)
+        renderer.setSize(690, 345); //change so it's not hard coded
     camera.aspect = SCREEN_WIDTH / SCREEN_HEIGHT;
     camera.updateProjectionMatrix();
 }
