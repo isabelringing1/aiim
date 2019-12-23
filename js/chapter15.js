@@ -694,13 +694,6 @@ var downgradePauses = [
     2000
 ]
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById("boxes").onclick = function(){
-        kickoffValhalla();
-        decision();
-    };
-});
-
 function ctrListener(ctr){
     if (ctr == 101){
         kickoffValhalla();
@@ -714,14 +707,23 @@ function kickoffValhalla(){
     $(".text-box").empty();
     document.getElementById("text-box").style.padding = "0px";
     document.getElementById("text-box").style.overflow = "visible";
-    $(".text-box").append("<div id='container' style='height:100%; position:relative;'> \
+    $(".text-box").append("<div id='container' style='height:100%; width:100%; position:relative;'> \
     <div id='overlay' style='padding: 10px; position: absolute;'> This is Valhalla. </div> </div>");
     init();
     animate();
+    if (mobile){
+        document.getElementById("canvas").style.width = '100%';
+        document.getElementById("canvas").style.height = '100%';
+        document.getElementById("text-box").style.width = '250px';
+    }
     changePhase(1);
 }
 
 function credits(){
+    if (mobile){
+        document.getElementById("credits1").style = "font-size:100px; top:-25%; left: -20%"
+        document.getElementById("credits2").style = "font-size:30px; top:10%; width: 300px;"
+    }
     document.getElementsByClassName("credits")[0].style.display = "block";
     document.getElementsByClassName("credits")[1].style.display = "block";
 }
@@ -753,4 +755,4 @@ function end(phase){
     }
 }
 
-export {chapterText, uploadText, downgradeText, pauses, uploadPauses, downgradePauses, end, ctrListener, setScroll, credits};
+export {chapterText, uploadText, downgradeText, pauses, uploadPauses, downgradePauses, end, ctrListener, setScroll, credits, nextChapter};

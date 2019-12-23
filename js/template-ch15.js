@@ -1,4 +1,4 @@
-import {chapterText, uploadText, downgradeText, pauses, uploadPauses, downgradePauses, end, ctrListener, setScroll} from "./chapter15.js"
+import {chapterText, uploadText, downgradeText, pauses, uploadPauses, downgradePauses, end, ctrListener, setScroll, nextChapter} from "./chapter15.js"
 import {init, animate, expand, onKeyDown} from './valhalla.js';
 
 var started = false;
@@ -180,13 +180,14 @@ function configMobile(){
     $(".active")[0].style.left = pos;
     $(".active")[0].style.top = '1000px';
 
-    $(".text-box")[0].innerHTML = '<p>Touch to enter chat.</p> <br> WARNING: this chapter does not work well with mobile yet. Please use the desktop version while this is being fixed.';
+    $(".text-box")[0].innerHTML = '<p>Touch to enter chat.</p>';
 
     document.addEventListener('touchend', function(){
-        if (!started)
+        if (!started){
             typingText = chapterText;
             typingPauses = pauses;
             start();
+        }
     });
 }
 

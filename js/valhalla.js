@@ -5,6 +5,7 @@ import { NormalMapShader } from './three/normalMapShader.js';
 import { TerrainShader } from './three/terrainShader.js';
 import { BufferGeometryUtils } from './three/bufferGeometryUtils.js';
 import { credits } from './chapter15.js'
+import { mobile } from './template-ch15.js'
 var SCREEN_WIDTH = window.innerWidth;
 var SCREEN_HEIGHT = window.innerHeight;
 var renderer, container;
@@ -124,6 +125,7 @@ function init() {
     renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio( window.devicePixelRatio );
     renderer.setSize(690, 350);
+    renderer.domElement.id = 'canvas';
     container.appendChild( renderer.domElement );
     // CONTROLS
     controls = new OrbitControls( camera, renderer.domElement );
@@ -193,6 +195,11 @@ function expand(){
     var left = rect.left;
     var typewrap = document.getElementById("type-wrap");
 
+    if (mobile){
+        SCREEN_HEIGHT = 1500
+        SCREEN_WIDTH = screen.width
+        
+    }
     zoomInto();
 
     var id = setInterval(frame, 10);
